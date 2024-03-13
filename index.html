@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zxs1doz.css?ver1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Pick Timer</title>
+  </head>
+  <body>
+    <header>
+      <h1>Draft Pick Timer</h1>
+    </header>
+    <div class="container">
+      <h2 id="packs_picks"><span id="packs"></span>パック - <span id="picks"></span>手目</h2>
+      <div id="timer"></div>
+      <div id="options">
+        使用パック数:
+        <select id="rounds">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>パック
+        <br>
+        1枚あたりの秒数:
+        <select id="picktime">
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>秒
+      </div>
+      <div class="button btn_start" id="btn_start" onclick=start()>Start</div>
+      <div class="button_container" id="btn_container">
+        <div class="button btn_stop" id="btn_stop" onclick=stop()>Stop</div>
+        <div class="button btn_restart" id="btn_restart" onclick=restart()>Restart</div>
+        <div class="button btn_next" onclick=next()>Next</div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
